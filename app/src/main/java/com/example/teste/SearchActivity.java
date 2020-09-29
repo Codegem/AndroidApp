@@ -64,17 +64,12 @@ public class SearchActivity extends AppCompatActivity {
                                "pristatymnas" + kate.getPristatymas() + "\n" +
                                   "Veisle" + kate.getVeisle() + "\n",
                 Toast.LENGTH_SHORT).show();
-            }
-        });
-
-
-        sukurti.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
                 Intent gotoLoginActivity = new Intent(SearchActivity.this, LoginActivity.class);
                 startActivity(gotoLoginActivity);
             }
         });
+
+
 
     }
 }
